@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Just For You 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pages -->
+  <div class="page active" id="page1">
+    <h1>Hey You 💕</h1>
+    <p>I made something special… shall we start?</p>
+    <button onclick="nextPage()">Yes 💖</button>
+  </div>
+
+  <div class="page" id="page2">
+    <h1>Question 1 🌸</h1>
+    <p>Do you believe little moments can become memories?</p>
+    <button onclick="nextPage()">Yes 😊</button>
+    <button class="no-btn" onclick="nextPage()">No 🙂</button>
+  </div>
+
+  <div class="page" id="page3">
+    <h1>Question 2 🧸</h1>
+    <p>Do you like when someone genuinely cares about you?</p>
+    <button onclick="nextPage()">Yes 💗</button>
+    <button class="no-btn" onclick="nextPage()">No 🤍</button>
+  </div>
+
+  <div class="page" id="page4">
+    <h1>Question 3 🍫</h1>
+    <p>Would you walk beside someone through ups and downs?</p>
+    <button onclick="nextPage()">Yes 💕</button>
+    <button class="no-btn" onclick="nextPage()">No 🌸</button>
+  </div>
+
+  <div class="page" id="page5">
+    <h1>Final Question 💖</h1>
+    <p>I love you… do you love me?</p>
+    <button onclick="yesLove()">Yes 💍</button>
+    <button class="no-btn" onclick="noLove()">No 💔</button>
+  </div>
+
+  <!-- YES RESULT -->
+  <div class="page" id="yesPage">
+    <div class="blast">🎉🎊🎉</div>
+    <h1>💍 Hold my hand</h1>
+    <p class="poem">
+      Hold my hand until I turn into ash,<br>
+      through time, storms, and every path 💖
+    </p>
+
+    <textarea placeholder="Leave me a note 💌"></textarea>
+    <div class="blast">🎊🎉🎊</div>
+  </div>
+
+  <!-- NO RESULT -->
+  <div class="page" id="noPage">
+    <h1>🙂</h1>
+    <p>Tata bye bye… wishing you happiness always 🌸</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

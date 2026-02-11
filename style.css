@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", cursive;
+  background: linear-gradient(135deg, #ff4f9a, #ff77b7, #ffb3d9);
+  color: white;
+  overflow: hidden;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page.active {
+  display: flex;
+  animation: fadeIn 0.8s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ff2f92;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #e60073;
+}
+
+.no-btn {
+  background: #555;
+}
+
+textarea {
+  width: 80%;
+  max-width: 400px;
+  height: 120px;
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.poem {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 30px;
+  animation: float linear infinite;
+  opacity: 0.85;
+}
+
+.blast {
+  font-size: 3rem;
+  animation: blast 1s infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(110vh) rotate(0deg);
+  }
+  to {
+    transform: translateY(-130vh) rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blast {
+  from { transform: scale(1); }
+  to { transform: scale(1.25); }
+}
